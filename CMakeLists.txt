@@ -37,4 +37,10 @@ else ()
   set (CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${PRODUCT_PREFIX}/Release/bin)
 endif ()
 
+set (SRC_ROOT ${CMAKE_SOURCE_DIR})
+
+include_directories (${SRC_ROOT})
+
 add_subdirectory(desktop)
+add_subdirectory(common/telemetry)
+add_subdirectory(common/unittest)
