@@ -9,6 +9,7 @@
 #define TEST(X) TEST_CASE(#X, "[telemetry/emplace_int]")
 #define ASSERT_EQ_FMT(X,Y,Z) REQUIRE(X == Y)
 
+
 TEST (emplace_int8)
 {
     TM_msg dummy;
